@@ -61,12 +61,13 @@
             android:dialogTitle="@string/volume_key_cursor_control_title"
             android:title="@string/volume_key_cursor_control_title"
             android:entries="@array/volume_key_cursor_control_entries"
-            android:entryValues="@array/volume_key_cursor_control_values" />
+            android:entryValues="@array/volume_key_cursor_control_values" /> -->
 
-        <org.omnirom.omnigears.preference.SystemCheckBoxPreference
+        <CheckBoxPreference
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
-            android:summary="@string/swap_volume_buttons_summary" />-->
+            android:summary="@string/swap_volume_buttons_summary"
+            android:persistent="false"/>
 
     </PreferenceCategory>
 
@@ -163,6 +164,18 @@
             android:entryValues="@array/keys_action_values"
             android:persistent="false"
             android:dependency="keys_enable_custom" />
+
+        <CheckBoxPreference
+            android:key="button_home_wake_screen"
+            android:title="@string/button_home_wake_title"
+            android:summary="@string/button_home_wake_summary"
+            android:persistent="false"/>
+
+        <CheckBoxPreference
+            android:key="button_home_answers_call"
+            android:title="@string/button_home_answers_call_title"
+            android:summary="@string/button_home_answers_call_summary"
+            android:persistent="false" />
 
     </PreferenceCategory>
 
